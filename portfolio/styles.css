@@ -148,14 +148,14 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    padding-bottom: 0rem;
 }
 
 .services-parent {
     display: flex;
     /* align-items: flex-start; */
     justify-content: space-between;
-    height: 60vh;
+    height: 50vh;
    
 }
 .services-child {
@@ -186,6 +186,34 @@ a {
     opacity: 95%;
     
 }
+.contact {
+    padding: 3rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+.contact-heading {
+    font-size: 6rem;
+    font-weight: 700;
+    padding: 0rem 6.5rem 0rem;
+}
+.contact-subheading {
+    font-size: 1.75rem;
+    font-weight: 500;
+    padding:  0rem 2.75rem 0rem;
+}
+.contact-email {
+    padding:  0rem 1.75rem 0rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+
+}
+.contact-emailid {
+    color:#4F46E5;
+}
+
 @media only screen and (max-width: 1065px) {
     .hero {
         height: 120vh;

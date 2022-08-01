@@ -1,4 +1,4 @@
-
+/*
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ a {
   text-decoration: none;
   color: #555;
   
-}
+}*/
 /* nav {
   display: flex;
   flex-flow: row wrap;
@@ -24,7 +24,7 @@ justify-content: flex-end;
   padding: 20px 50px;
   box-shadow: 0 1px 8px #ddd;
 } */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 * {
     margin: 0;
@@ -33,8 +33,9 @@ justify-content: flex-end;
 }
 
 html {
-    font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+    font-size: 65.5%;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 li {
@@ -43,6 +44,16 @@ li {
 
 a {
     text-decoration: none;
+}
+
+.btn {
+    border: none;
+    background-color: #FF7009;
+    color:#F8F8F8;
+    padding: 6px 6px;
+    font-size: 2rem;
+    border-radius: 4px;
+    width: fit-content;
 }
 
 /* .header{
@@ -88,8 +99,8 @@ a {
     color: #F8F8F8;
 }
 
-.nav-link:hover{
-    color: #482ff7;
+.nav-link:hover , .nav-logo:hover{
+    color: #D9D9D9;
 }
 
 .nav-logo {
@@ -101,24 +112,78 @@ a {
 .hero {
     height: 80vh;
     background-color: #4F46E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 10rem;
+    color: #F8F8F8;
 }
-
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+.hero-heading {
+    font-size: 6rem;
+    font-weight: 700;
+}
+.hero-subheading {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 2rem 0rem;
+}
+.hero-img {
+  /* min-width: 350px; */
+  max-width: 350px;
+  height: auto;
+}
+#hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+@media only screen and (max-width: 1065px) {
+    .hero {
+        height: 120vh;
+    }
+   
+@media only screen and (max-width: 850px) {
+.hero {
+    flex-direction: column;
+    height: 100vh;
+}
+#hero-img {
+    justify-content: center;
+}
+.hero-heading {
+    font-size: 4rem;
+    font-weight: 600;
+}
+.hero-subheading {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+}
 @media only screen and (max-width: 768px) {
     .navbar {
-        padding: 1rem 1.5rem;
+        padding: 1rem 5rem;
     }
+    .hero {
+        padding: 3rem 5rem;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: #fff;
+        background-color: #4F46E5;
         width: 100%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     .nav-menu.active {

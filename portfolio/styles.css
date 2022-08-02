@@ -160,7 +160,7 @@ a {
 }
 .services-child {
     width:25%;
-
+   
 }
 .services-tag {
     
@@ -190,23 +190,24 @@ a {
     padding: 3rem 10rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 60vh;
 }
 .contact-heading {
     font-size: 6rem;
     font-weight: 700;
-    padding: 0rem 6.5rem 0rem;
+    padding: 0rem 0rem 2.5rem 0rem;
+
 }
 .contact-subheading {
     font-size: 1.75rem;
     font-weight: 500;
-    padding:  0rem 2.75rem 0rem;
+    padding:  1rem 0rem 1.75rem 0rem;
 }
 .contact-email {
-    padding:  0rem 1.75rem 0rem;
-    font-size: 1.75rem;
+    padding:  1rem 0rem 1.75rem 0rem;
+    font-size: 3rem;
     font-weight: 600;
 
 }
@@ -238,10 +239,10 @@ a {
 }
 @media only screen and (max-width: 768px) {
     .navbar {
-        padding: 1rem 5rem;
+        padding: 1rem 3rem;
     }
     .hero {
-        padding: 3rem 5rem;
+        padding: 3rem 3rem;
     }
 
     .nav-menu {
@@ -283,12 +284,40 @@ a {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+    .services {
+        padding: 3rem 3rem;
+    }
     .services-parent {
         flex-direction: column;
+        height: 70vh;
        
     }
     .services-child {
         width:auto;
+    
+    }
+    .contact {
+        padding: 3rem 3rem;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 40vh;
+    }
+    .contact-heading {
+        font-size: 4rem;
+        font-weight: 700;
+        padding: 0rem 0rem 2.5rem 0rem;
+    }
+    .contact-subheading {
+        font-size: 1.25rem;
+        font-weight: 400;
+        padding:  0rem 0rem 1.75rem 0rem;
+    }
+    .contact-email {
+        padding:  0rem 0rem 1.75rem 0rem;
+        font-size: 2rem;
+        font-weight: 600;
     
     }
 }

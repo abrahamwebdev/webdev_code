@@ -31,7 +31,9 @@ justify-content: flex-end;
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 html {
     font-size: 65.5%;
     font-family: 'Poppins', sans-serif;
@@ -46,7 +48,7 @@ a {
     text-decoration: none;
 }
 
-.btn {
+/* .btn {
     border: none;
     background-color: #FF7009;
     color:#F8F8F8;
@@ -54,8 +56,22 @@ a {
     font-size: 2rem;
     border-radius: 4px;
     width: fit-content;
-}
+} */
 
+.btn {
+    border: 0;
+    border-radius: 0.25rem;
+    background: #FF7009;
+    color: white;
+    font-family: -system-ui, sans-serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    margin: 0.25rem;
+    cursor: pointer;
+  }
 /* .header{
     border-bottom: 1px solid #E2E8F0;
 } */

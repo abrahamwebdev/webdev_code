@@ -280,12 +280,12 @@ a {
 }
 .footer-child {
     width:50%;
-   
+    height:25vh ;
 }
 .footer-heading {
     font-size: 2.25rem;
     font-weight: 600;
-    padding: 2rem 0rem;
+    padding: 0rem 0rem;
     opacity: 100%;
     color:#4F46E5;
 }
@@ -301,7 +301,7 @@ a {
 .footer-follow {
     font-size: 2.25rem;
     font-weight: 500;
-    padding: 2rem 0rem;
+    padding: 0rem 0rem;
     opacity: 90%;
 }
 .dot {
@@ -310,7 +310,19 @@ a {
     background-color: #343741;
     border-radius: 50%;
     display: inline-block;
+    display: flex;
+    justify-content: center;
+    
+
   }
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.dot img {
+    width: 2.5rem;
+}
 @media only screen and (max-width: 1065px) {
     .hero {
         height: 120vh;
@@ -340,7 +352,12 @@ a {
     .hero {
         padding: 3rem 3rem;
     }
-
+    .footer {
+        padding: 4rem 3rem;
+        height: 60vh;
+        flex-direction: column;
+    
+    }
     .nav-menu {
         position: fixed;
         left: -100%;

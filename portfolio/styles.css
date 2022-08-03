@@ -271,11 +271,46 @@ a {
 }
 .footer {
     padding: 4rem 10rem;
-
+    background-color: #F0F0F0;
     display: flex;
     height: 40vh;
-}
+    align-items: center;
+    justify-content: flex-start;
 
+}
+.footer-child {
+    width:50%;
+   
+}
+.footer-heading {
+    font-size: 2.25rem;
+    font-weight: 600;
+    padding: 2rem 0rem;
+    opacity: 100%;
+    color:#4F46E5;
+}
+.footer-email {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 2rem 0rem;
+    opacity: 100%;
+}
+.footer-emailid {
+    color:#4F46E5;
+}
+.footer-follow {
+    font-size: 2.25rem;
+    font-weight: 500;
+    padding: 2rem 0rem;
+    opacity: 90%;
+}
+.dot {
+    height: 4rem;
+    width: 4rem;
+    background-color: #343741;
+    border-radius: 50%;
+    display: inline-block;
+  }
 @media only screen and (max-width: 1065px) {
     .hero {
         height: 120vh;
